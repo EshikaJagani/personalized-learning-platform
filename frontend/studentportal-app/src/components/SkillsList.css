@@ -1,0 +1,28 @@
+/* styling file for the SkillsList component */
+.container_1{
+    /*this is from the same yt video*/
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 20px;
+    width: 250px;
+    height: 120px;
+    border: 1px solid black;
+    /* shorthand: https://www.w3schools.com/css/css_border_shorthand.asp */
+    /*chatgpt code for cursor starts here*/
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*chatgpt code for cursor starts here*/
+}
+.list_container{
+    background-color: rgba(128, 128, 128, 0.941);
+    /*selecting color is soooooo toughhhh*/
+    color: white;
+    width: 250px;
+    height: 680px;
+} 
+
+.selected_topic {
+  background-color: darkgrey; 
+  font-weight: bold;
+}

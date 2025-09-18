@@ -1,0 +1,48 @@
+# version: '3.8'
+# commenting this as it is causing errors
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+      # ollama:
+      #   condition: service_healthy
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+
+  ollama:
+    # build:
+    #   context: ./ollama-container
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    # entrypoint: /bin/sh -c "ollama pull phi3 && ollama run phi3"
+    # entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 3 && ollama run phi3"]
+    # entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 5 && ollama run phi3"]
+    # entrypoint: ["/bin/sh", "-c", "ollama pull phi3 && ollama serve"]
+    # entrypoint: ["/bin/sh", "-c", "ollama pull phi3 && sleep 3 && ollama serve"]
+    # command: >
+    #   bash -c "ollama pull phi3 && ollama serve"
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:11434"]
+    #   interval: 10s
+    #   timeout: 5s
+    #   retries: 10
+
+
+  # ollama:
+  #   build:
+  #     context: ./ollama-container
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama-data:/root/.ollama
+
+volumes:
+  ollama-data:

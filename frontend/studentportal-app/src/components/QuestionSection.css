@@ -1,0 +1,89 @@
+/* styling file for the QuestionSection component */
+.question_container{
+    background-color: rgba(219, 229, 169, 0.836);
+    height: 600px;
+    padding: 80px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.hint-button{
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 55px;
+    border-radius: 8px;
+}
+
+.button-button{
+    /* https://www.w3schools.com/css/css3_buttons.asp */
+  background-color: #04AA6D;
+  position: relative;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  /* font-size: 16px; */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.question_box{
+  padding: 80px;
+  background-color: white;
+  border-radius: 8px;
+  /* box-shadow: 10px rgba(72, 72, 71, 0.571); */
+  width: 700px;
+  margin: auto;
+}
+
+.question_container{
+    padding: 80px;
+}
+
+.skill-header{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    /* took help from chatgpt for this */
+    /* this is to change color of carousel arrows */
+    /* else the buttons are getting camouflaged */
+    /* doing it for both prev and next both the buttons */
+    background-color: rgba(128, 128, 128, 0.532);
+    border-radius: 15px;
+}
+

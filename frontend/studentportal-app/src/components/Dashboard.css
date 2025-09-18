@@ -1,0 +1,22 @@
+/* styling file for the Dashboard component */
+.dashboard-container{
+    padding: 80px;
+    background-color: rgba(219, 229, 169, 0.322);
+    height: 600px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 600px;
+    width: 1200px;
+}
+
+.title-container{
+    margin-bottom: 50px;
+}
+
+.table{
+    /* https://www.w3schools.com/css/css_table_align.asp */
+    text-align: center;
+}

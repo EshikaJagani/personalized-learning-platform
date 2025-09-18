@@ -1,0 +1,21 @@
+/* styling file for the InfoSection component */
+.info-container {
+    background-color: rgba(219, 229, 169, 0.836);
+    height: 600px;
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header-container{
+    padding: 40px;
+}
+
+.content-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}

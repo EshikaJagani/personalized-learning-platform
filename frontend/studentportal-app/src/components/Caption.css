@@ -1,0 +1,6 @@
+/* styling file for Caption component */
+.caption_container{
+    background-color: #4f80009a;
+    padding: 25px 40px;
+    gap: 50px;
+}
