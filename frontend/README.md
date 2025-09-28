@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We are developing frontend using React Typescript.Further, we are using Bootstrap for look and feels.
+We are developing frontend using React Typescript. Further, we are using Bootstrap for look and feels.
 
 ## Documentation
 
